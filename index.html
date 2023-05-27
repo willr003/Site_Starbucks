@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap" rel="stylesheet">
+    <title>Starbucks</title>
+</head>
+
+<body>
+
+    <div class="circulo"></div>
+
+  <a href="index.html"><img src="img/logo.png" class="logo"></a>
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>It's not just coffee
+                <br> it's <span>Starbucks</span>
+            </h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <br> 
+                Mollitia vero, sequi doloribus obcaecati laborum dignissimos 
+                <br>
+                nam fuga iste alias explicabo esse!</p>
+            <br>
+            <button>Lean More</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./img/img1.png" class="star">
+        </div>
+
+    </div>
+
+    <div class="menu">
+      
+        <img src="./img/thumb1.png" class="botao-menu" onclick="trocaimg('./img/img1.png'); trocacor('#017143') ">  <!-- O evento onclick executa determinada funcionalidade quando um botão é clicado. Você coloca a função em JavaScript que você quer executar dentro da tag de abertura do botão. -->
+        <img src="./img/thumb2.png" class="botao-menu" onclick="trocaimg('./img/img2.png'); trocacor('#eb7495') ">
+        <img src="./img/thumb3.png" class="botao-menu" onclick="trocaimg('./img/img3.png'); trocacor('#d752b1') "> 
+    </div>
+
+
+</body>
+
+<script>
+        let img = document.querySelector(".star") /*pra chamar algo que estar no html, cria uma variável,
+         e depois usa o document, queryselector seleciona. */
+        let circulo = document.querySelector(".circulo")
+   
+
+        function trocaimg(img2){      /*function é um trecho de código, q só é executado qnd é chamado */   
+            img.src = img2
+        }
+
+        function trocacor(cor) {
+            circulo.style.background = cor 
+        }
+
+</script>
+
+</html>

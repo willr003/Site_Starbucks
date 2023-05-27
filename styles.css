@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    padding-top: 20px;
+    padding-right: 100px;   
+    padding-left: 100px;
+    
+    /* a propriedade padding é utilizada para definir a distância entre o 
+    conteúdo e a borda do container, enquanto isso, a propriedade margin 
+    cria um espaçamento externo “empurrando” os elementos adjacentes.*/ 
+                            
+}
+
+
+.conteudo {
+
+    width: 100%; /* largura */   
+    display: flex;  /* permite que alteremos a posição dos elementos na tela */ 
+    justify-content: space-between; /* permite justificar/alinhar/posicionar os componentes. 
+    o space-between cria um espaço entre os itens. lembrando que só é possível usar o justify-content 
+    quando o display é flex.*/
+    align-items: center;
+}
+
+.caixa-texto {
+
+    width: 600px;
+
+}
+
+.caixa-imagem {
+
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+h2 {
+    color: #333;
+    font-size: 40px;  /* Tamanho da fonte */
+    font-weight: 500;
+}
+
+span {
+    color: #017143;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 15px; 
+}
+
+button {
+    padding: 10px;                /*espaçamento interno */
+    background: #017143;       /*Fundo do elemento */
+    color: #fff;              /* Cor do texto */
+    border-radius: 40px;       /*arredondamento da borda */
+    border: none;             /* borda do elemento, nesse caso "none" nenhuma borda */
+    cursor: pointer;         /* cursor do mouse  */
+    margin-top: auto;
+}
+
+.logo {
+
+    width: 60px; /* determina a largura da área de conteúdo de um elemento */
+}
+
+.star {
+    width: 200px;
+}
+
+.menu {
+
+    display: flex;
+    justify-content: center;
+
+  
+}
+
+.botao-menu {
+
+    width: 50px;
+    transition: 1s;    /* permite definir a transição entre dois estados de um elemento. */
+    cursor: pointer;
+    margin-top: 25px;
+    margin: 9px
+   
+
+}
+
+
+/* Hover: serve para adicionar características a um elemento quando a 
+pessoa usuária posiciona o mouse sobre ele.   */
+.botao-menu:hover {
+
+    transform: translateY(-15px); /* transform permite fazer zoom, dar perspectivas ou rodar elementos.
+                                  A função de translate serve para mover o elemento para os lados, 
+                                  ou para cima/baixo. A sintaxe pode ser especifica para um dos eixos x/y 
+                                  (translateX ou translateY) */
+}
+
+.circulo{
+    position: absolute;
+    width: 100%;
+    height: 100%; /*altura do elemento */
+    background: #017143;
+    top: 0;
+    left: 0;
+    clip-path: circle(400px at right 500px); /* gerar visualmente novos elementos como circulos, polígonos, etc... primeiro define o tamanho do circulo e depois a posição do circulo!*/
+    z-index: -1; /* controla se fica a frente ou atrás dos elementos */ 
+}
+
+
